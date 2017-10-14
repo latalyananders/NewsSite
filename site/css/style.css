@@ -16,3 +16,38 @@
     height: 40px;
     border-radius: 10px;
 }
+
+.news{
+    background-color: white;
+    border-radius: 10px;
+    border-color: black;
+    height: auto;
+    border-style: ridge;
+}
+
+.note{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-color: black;
+    border-style: ridge;
+    border-radius: 10px;
+    height: auto;
+}
+
+.block-left{
+    width: 70%;
+    float:left;
+}
+.block-right{
+    width:30%;
+    float: right;
+}
+
+.photocard{
+    display: block;
+    width: 200px;
+    height: 300px;
+    margin-right: 20px;
+}

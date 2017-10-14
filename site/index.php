@@ -20,7 +20,6 @@
                             </em>
                         </strong>
                     </a>
-
                 </h1>
             </div>
             <div class="admin-rec">
@@ -36,7 +35,7 @@
                     <input type="text" placeholder="Поиск по сайту..."
                            style="margin-top: 3px; /*margin-left: 540px;*/ height: 33px;
                            padding-left: 15px"
-                           class="col-sm-2 col-sm-offset-5">
+                           class="col-sm-3 col-sm-offset-4">
                     <button class="btn col-sm-1 " style="
                         margin-left: 5px;
                         margin-right: 40px;
@@ -45,6 +44,42 @@
                         border-color: black;"
                     >Поиск</button>
                 </div>
+            </div>
+            <div class="news">
+                <h2 style="text-align: center;
+                            font-size: 2em;
+                            font-family: Baskerville Old Face;"><b>Лента новостей</b></h2>
+                <div class="note">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h3 style="font-family: Baskerville Old Face; padding: 10px; text-align: center"> <b>Сегодня снова ничего не произошло</b></h3>
+                            <p style="padding: 10px; font-family: Arial; text-align: justify; border-bottom-color: black">Здесь тоже что-то должно быть написано, поэтому давайте сделаем вид, будто так и есть, потому что мне лень искать какие-то новости, а для шаблона и так сойдёт.</p>
+                            <p style="padding: 10px; font-family: Arial; text-align: justify; border-bottom: double; border-bottom-color: black">Лучше попяльтесь на секазного Санджи</p>
+                            <p style="margin-left: 5px"><b>garaninanatalya3@gmail.com</b></p>
+                            <button class="btn" style="margin-left: 5px;
+                                            margin-right: 40px;
+                                            margin-top: 3px;
+                                            margin-bottom: 5px;
+                                            background-color: white;
+                                            border-color: black;">Редактировать новость</button>
+                            <button class="btn" style="margin-left: 5px;
+                                            margin-right: 40px;
+                                            margin-top: 3px;
+                                            margin-bottom: 5px;
+                                            background-color: white;
+                                            border-color: black;">Удалить новость</button>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="https://pp.userapi.com/c621701/v621701950/246d0/n4u953ErWbg.jpg" class="photocard">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="admin-rec" style="
+                    font-family: Baskerville Old Face;
+                    font-size: 2em;
+                    padding-left: 20px">
+                <p><b>Информация о том, кто сделал этот сайт</b></p>
             </div>
         </div>
     </body>
