@@ -4,6 +4,10 @@
     padding-left: 40px;
 }
 
+.container{
+    min-width: 600px;
+}
+
 .main-rec{
     height: 170px;
     background-color: #0066FF;

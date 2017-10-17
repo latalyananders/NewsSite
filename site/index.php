@@ -13,7 +13,7 @@
         <div class="container">
             <div class="main-rec">
                 <h1 class="hero-unit">
-                    <a class="brand" href="#" style="color: white">
+                    <a class="brand" href="/index.php" style="color: white">
                         <strong>
                             <em>
                                 САМЫЕ<br>НОВЫЕ<br>НОВОСТИ
@@ -24,25 +24,30 @@
             </div>
             <div class="admin-rec">
                 <div class="row">
-                    <button class="btn col-sm-2 "
-                            style="
+                    <a href="news.php">
+                        <button class="btn col-sm-2 "
+                                style="
                         margin-left: 50px;
                         width: 150px;
                         margin-top: 3px;
                         background-color: white;
                         border-color: black;"
-                    >Добавить новость</button>
+                        >Добавить новость</button>
+                    </a>
                     <input type="text" placeholder="Поиск по сайту..."
                            style="margin-top: 3px; /*margin-left: 540px;*/ height: 33px;
                            padding-left: 15px"
                            class="col-sm-3 col-sm-offset-4">
-                    <button class="btn col-sm-1 " style="
+                    <a href="search.php">
+
+                        <button class="btn col-sm-1 " style="
                         margin-left: 5px;
                         margin-right: 40px;
                         margin-top: 3px;
                         background-color: white;
                         border-color: black;"
-                    >Поиск</button>
+                        >Поиск</button>
+                    </a>
                 </div>
             </div>
             <div class="news">
@@ -54,14 +59,16 @@
                         <div class="col-sm-8">
                             <h3 style="font-family: Baskerville Old Face; padding: 10px; text-align: center"> <b>Сегодня снова ничего не произошло</b></h3>
                             <p style="padding: 10px; font-family: Arial; text-align: justify; border-bottom-color: black">Здесь тоже что-то должно быть написано, поэтому давайте сделаем вид, будто так и есть, потому что мне лень искать какие-то новости, а для шаблона и так сойдёт.</p>
-                            <p style="padding: 10px; font-family: Arial; text-align: justify; border-bottom: double; border-bottom-color: black">Лучше попяльтесь на секазного Санджи</p>
+                            <p style="padding: 10px; font-family: Arial; text-align: justify; border-bottom: double; border-bottom-color: black">А вместо картинки я пока поставлю сюда трогательный момент с Шанксом и Луффи</p>
                             <p style="margin-left: 5px"><b>garaninanatalya3@gmail.com</b></p>
-                            <button class="btn" style="margin-left: 5px;
+                            <a href="news.php">
+                                <button class="btn" style="margin-left: 5px;
                                             margin-right: 40px;
                                             margin-top: 3px;
                                             margin-bottom: 5px;
                                             background-color: white;
                                             border-color: black;">Редактировать новость</button>
+                            </a>
                             <button class="btn" style="margin-left: 5px;
                                             margin-right: 40px;
                                             margin-top: 3px;
@@ -70,7 +77,7 @@
                                             border-color: black;">Удалить новость</button>
                         </div>
                         <div class="col-sm-4">
-                            <img src="https://pp.userapi.com/c621701/v621701950/246d0/n4u953ErWbg.jpg" class="photocard">
+                            <img src="https://pp.userapi.com/c639731/v639731928/56f30/Q4LO10iLwCE.jpg" class="photocard">
                         </div>
                     </div>
                 </div>
