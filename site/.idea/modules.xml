@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/papka.iml" filepath="$PROJECT_DIR$/.idea/papka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Test_Laravel.iml" filepath="$PROJECT_DIR$/.idea/Test_Laravel.iml" />
     </modules>
   </component>
 </project>

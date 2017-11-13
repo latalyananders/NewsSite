@@ -1,0 +1,80 @@
+.hero-unit{
+    color: white;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.container{
+    min-width: 800px;
+    min-height: 100%;
+    margin-bottom: -40px;
+}
+
+.page-buffer {
+    height: 40px;
+}
+
+.main-rec{
+    height: 170px;
+    background-color: #0066FF;
+    border-radius: 10px;
+    padding-top: 4px;
+}
+
+.feed{
+    text-align: center;
+    font-size: 2em;
+    font-family: Baskerville Old Face;
+}
+
+.admin-rec{
+    background-color: #CCCCCC;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.footer{
+    background-color: #CCCCCC;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.lenta{
+    background-color: white;
+    border-radius: 10px;
+    border-color: black;
+    height: auto;
+    border-style: ridge;
+    border-width: 1px;
+}
+
+.note{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-color: black;
+    border-style: ridge;
+    border-radius: 10px;
+    height: auto;
+    border-width: 1px;
+}
+
+.photocard{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.content{
+    padding: 10px;
+    font-family: Arial;
+    text-align: justify;
+    border-bottom-color: black;
+    margin-left: 10px;
+}
