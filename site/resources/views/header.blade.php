@@ -11,7 +11,7 @@
 </div>
 <div class="admin-rec">
     <div class="row">
-        <a href="news.php">
+        <a href="/add_news">
             <button class="btn col-sm-2 "
                     style="
                         margin-left: 50px;

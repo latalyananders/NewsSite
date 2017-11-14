@@ -14,7 +14,7 @@ class Controller extends BaseController
     public function query($number_page){
         $news = \App\News::query()->orderByDesc('date')->get();
         $down = ($number_page - 1) * 10;
-        $up = $number_page * 10;
+        $up = $number_page * 10 - 1;
         if($up > count($news)){
             $up = count($news) - 1;
         }

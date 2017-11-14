@@ -27,8 +27,10 @@
                                 <p class="content">@{{ element.body }}</p>
                                 <p class="content"><b>@{{ element.email }}</b></p>
                                 <div class="row">
-                                    <form class="col-sm-6" method="post" action="/scripts/fill_view.php">
-                                        <input type="hidden" name="id" value="">
+                                    <form class="col-sm-6" method="post" action="/edit_news">
+                                        <input name="_method" type="hidden" value="GET">
+                                        {{ csrf_field() }}
+                                        <input type="hidden" name="id" v-model="element.id">
                                         <input type="submit" class="btn" style="margin-left: 5px;
                                             margin-right: 40px;
                                             margin-top: 3px;
@@ -36,8 +38,10 @@
                                             background-color: white;
                                             border-color: black;" value="Редактировать новость">
                                     </form>
-                                    <form class="col-sm-6" action="/scripts/delete.php" method="post">
-                                        <input type="hidden" name="id" value="">
+                                    <form class="col-sm-6" action="/destroy" method="post">
+                                        <input name="_method" type="hidden" value="GET">
+                                        {{ csrf_field() }}
+                                        <input type="hidden" name="id" v-model="element.id">
                                         <input type="submit" class="btn" style="margin-left: 5px;
                                                 margin-right: 40px;
                                                 margin-top: 3px;

@@ -28,16 +28,13 @@ class NewsController extends Controller
         $news->header = $request->get('header');
         $news->body = $request->get('body');
         $news->email = $request->get('email');
-        $dir = '/images/';
+        $dir = 'images/';
         $uploadfile = $dir . basename($_FILES['file']['name'] );
-        if (move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile)) {
-            echo "Файл был успешно загружен.\n";
-        } else {
-            echo "Ошибка при загрузке файла\n";
-        }
-        $news->url = $request->get('url');
-        $news->date = $request->get('date');
+        move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile) or die();
+        $news->url = $uploadfile;
+        $news->date = date("Y-m-d");
         $news->save();
+        return redirect('/');
     }
 
     /**
@@ -85,9 +82,12 @@ class NewsController extends Controller
         $news->header = $request->get('header');
         $news->body = $request->get('body');
         $news->email = $request->get('email');
-        $news->url = $request->get('url');
-        $news->date = $request->get('date');
+        $dir = 'images/';
+        $uploadfile = $dir . basename($_FILES['file']['name'] );
+        move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile) or die();
+        $news->url = $uploadfile;
         $news->save();
+        return redirect('/');
     }
 
     /**
