@@ -19,7 +19,7 @@
         <div class="note" style="border-color: white">
             <div class="row">
                 <div class="col-sm-offset-1 col-sm-11">
-                    <form method="post" enctype="multipart/form-data" action="/news/update">
+                    <form method="post" enctype="multipart/form-data" action="/update">
                         <input name="_method" type="hidden" value="GET">
                         {{ csrf_field() }}
                         <input type="text"
@@ -30,7 +30,8 @@
                         <input type="email"
                                style="margin-top: 3px; height: 33px;
                                        padding-left: 15px; width: 90%; border-color: black" name="email" v-model="news.email">
-                        <input type="file" name="file" class="btn" >
+                        <input type="file" name="file" class="btn">
+                        <input type="hidden" name="id" v-model="news.id">
                         <input type="submit" value="Сохранить" class="btn" style="margin-right: 40px;
                                                     margin-top: 5px;
                                                     margin-bottom: 5px;

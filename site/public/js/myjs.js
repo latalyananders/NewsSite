@@ -4,7 +4,8 @@
         data:{
             news: window.news,
             pagenumber: 1,
-            maxPage: window.maxPage
+            maxPage: window.maxPage,
+            request: window.request
         },
         methods: {
             query: function () {

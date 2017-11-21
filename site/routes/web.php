@@ -1,5 +1,6 @@
 <?php
     use \App\News as News;
+    use App\Http\Controllers\NewsController as Controller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,6 +41,17 @@ Route::get('/edit_news', function (){
 });
 
 Route::get('/destroy', function () {
-    $news = News::query()->where('id', '=', $_POST['id'])->delete();
+    Controller::destroy($_POST['id']);
     return redirect('/');
 });
+
+Route::get('/update', function (){
+    Controller::update($_POST, $_FILES);
+    return redirect('/');
+});
+
+Route::get('/search', function (){
+    $news = Controller::search($_POST['request']);
+    return view('search', ['news'=>$news, 'request'=>$_POST['request']]);
+});
+

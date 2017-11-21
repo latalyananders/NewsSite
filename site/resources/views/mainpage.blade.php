@@ -16,9 +16,7 @@
             @include('header')
             <div id="app" >
             <div class="lenta">
-
                 <h2 class="feed"><b>Лента новостей</b></h2>
-
                     <div class="note" v-for="element in news">
                         <div class="row" >
                             <div class="col-sm-8" >

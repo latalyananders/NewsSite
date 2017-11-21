@@ -70,34 +70,32 @@ class NewsController extends Controller
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\News  $news
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, News $news)
-    {
-        $news->header = $request->get('header');
-        $news->body = $request->get('body');
-        $news->email = $request->get('email');
+    public static function update($data, $file){
+        $news = News::find($data['id']);
+        $news->header = $data['header'];
+        $news->body = $data['body'];
+        $news->email = $data['email'];
         $dir = 'images/';
-        $uploadfile = $dir . basename($_FILES['file']['name'] );
-        move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile) or die();
+        $uploadfile = $dir . basename($file['file']['name'] );
+        move_uploaded_file($file['file']['tmp_name'], $uploadfile) or die();
         $news->url = $uploadfile;
         $news->save();
-        return redirect('/');
     }
 
     /**
      * Remove the specified resource from storage.
      *
      * @param  \App\News  $news
-     * @return \Illuminate\Http\Response
      */
-    public function destroy(News $news)
+    public static function destroy($id)
     {
-        $news->delete();
+        News::destroy($id);
+        //$news->delete();
+    }
+
+    public static function search($request){
+        $str = '%' . $request . '%';
+        $news = News::query()->where('header', 'LIKE', $str)->orderByDesc('date')->get();
+        return $news;
     }
 }
